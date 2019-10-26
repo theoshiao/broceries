@@ -3,6 +3,7 @@ from flask_pymongo import PyMongo
 from flask import request
 from bson.objectid import ObjectId
 from flask import jsonify
+import prototype
 from werkzeug import secure_filename
 
 
@@ -54,7 +55,13 @@ def upload_file():
    if request.method == 'POST':
       f = request.files['file']
       f.save(secure_filename(f.filename))
-      return "hi"
+      file_name = '/Users/nneeranjun/Desktop/broceries/'+f.filename
+      map = prototype.itemPriceMapping(file_name)
+      return map
+""""@app.route('/getFinalCosts', methods = ['GET', 'POST'])
+def upload_file():
+   if request.method == 'POST':
+      user_item_map = request.json"""
 
 if __name__ == '__main__':
    app.run(debug = True)
