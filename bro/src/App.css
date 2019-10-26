@@ -28,16 +28,16 @@
 
 /* COMPONENT STYLES -------------------- */
 .scoreboard {
-  background: #fff;
+  background: black;
   width: 700px;
-  margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(133, 104, 250);
+  margin: 100px auto;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .player {
   display: flex;
+  font-style: italic;
   font-size: 1.2em;
   border-bottom: solid 2px #EEEEEE;
   letter-spacing: 2px;
