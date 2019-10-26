@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+import AddBro from './AddBro.js'
 
+import logo from './logo.svg';
+import './App.css';
 
 
 class App extends React.Component {
@@ -13,7 +15,9 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
         <div>
-          <h1> Broceries </h1>
+          <h1> BROCERIES </h1>
+          <img src={logo}/>
+
            Split your groceries with your bros.
 
            <form action = "http://127.0.0.1:5000/uploadphoto" method = "POST"
@@ -23,6 +27,7 @@ class App extends React.Component {
            </form>
            </div>
         </header>
+        <AddBro />
       </div>
     )
   }
