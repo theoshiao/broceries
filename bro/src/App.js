@@ -13,9 +13,9 @@ class App extends React.Component {
   state = {
     users: [
     {
-      name: "Me",
+      name: "",
       items: [],
-      id: 1
+      id: 0
     }
   ],
     data : {

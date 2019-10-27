@@ -12,6 +12,8 @@ class AddUserForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addUser(this.state.value);
+    this.state.value = '';
+
   }
 
   render() {
