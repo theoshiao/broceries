@@ -39,7 +39,8 @@ class App extends React.Component {
 
   imageUpload = () => {
     const axios = require('axios').default;
-    // var fileObj = this.fileUpload.files[0];
+    var fileObj = this.fileUpload.files[0];
+    console.log(fileObj)
     // fetch('http://127.0.0.1:5000/uploadphoto', {mode: 'no-cors'}, {
     //   method: 'post',
     //   body: fileObj
@@ -49,9 +50,9 @@ class App extends React.Component {
     // }).catch(function(error) {
     //   console.error('error:', error); // Print the error if one occurred
     // });
-    axios.post('http://127.0.0.1:5000/uploadphoto', {
-    name: 'nilay'
-  }).then(function (response) {
+    const formData = new FormData();
+    formData.append("file", fileObj);
+    axios.post('http://127.0.0.1:5000/uploadphoto', formData).then(function (response) {
     console.log(response);
   }).catch(function (error) {
     console.log(error);

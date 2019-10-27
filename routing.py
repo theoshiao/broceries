@@ -20,41 +20,20 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/uploadphoto', methods = ['GET', 'POST'])
 def upload_file():
-    if request.method == 'POST':
-        #f = request.files['file']
-        #print(f)
+      if request.method == 'POST':
       #names = request.form['names']
-      #f.save(secure_filename(UPLOAD_FOLDER + f.filename))
+      #
       #return jsonify(prices_map = prototype.getPricesMap(f.filename))
-      print(request.form['name'])
-      return 'hi'
+      #print(request.form['name'])
+            f = request.files['file']
+            f.save(secure_filename(UPLOAD_FOLDER + f.filename))
+            print(prototype.itemPriceMapping('/Users/nneeranjun/Desktop/broceries/'+ f.filename))
+            return 'hi'
 
 # @app.route('/getFinal', methods = ['GET', 'POST'])
 # def upload_file():
 #    if request.method == 'POST':
 
-
-
-
-
-
-
-
-<<<<<<< HEAD
-@app.route('/uploadphoto', methods = ['GET', 'POST'])
-def upload_file():
-   if request.method == 'POST':
-      f = request.files['file']
-      f.save(secure_filename(f.filename))
-      file_name = '/Users/nneeranjun/Desktop/broceries/'+f.filename
-      map = prototype.itemPriceMapping(file_name)
-      return map
-""""@app.route('/getFinalCosts', methods = ['GET', 'POST'])
-def upload_file():
-   if request.method == 'POST':
-      user_item_map = request.json"""
-=======
->>>>>>> b04e1308fc4da40ba3b4c8d9347bf0f3197289fc
 
 if __name__ == '__main__':
    app.run(debug = True)
