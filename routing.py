@@ -27,8 +27,8 @@ def upload_file():
       #print(request.form['name'])
             f = request.files['file']
             f.save(secure_filename(UPLOAD_FOLDER + f.filename))
-            print(prototype.itemPriceMapping('/Users/nneeranjun/Desktop/broceries/'+ f.filename))
-            return 'hi'
+            prices_map = prototype.itemPriceMapping('bro_uploads_'+f.filename)
+            return jsonify(prices_map)
 
 # @app.route('/getFinal', methods = ['GET', 'POST'])
 # def upload_file():

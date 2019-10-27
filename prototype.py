@@ -5,11 +5,15 @@ import os
 # Imports the Google Cloud client library
 from google.cloud import vision
 from google.cloud.vision import types
+#export GOOGLE_APPLICATION_CREDENTIALS="./groceries-837fe89ce8dc.json"
 
 def itemPriceMapping(path):
+    
     client = vision.ImageAnnotatorClient()
-
-    with io.open(path, 'rb') as image_file:
+    script_dir = os.path.dirname(__file__)
+    rel_path = path
+    abs_file_path = os.path.join(script_dir, rel_path)
+    with io.open(abs_file_path, 'rb') as image_file:
         content = image_file.read()
 
     image = vision.types.Image(content=content)
@@ -26,6 +30,7 @@ def itemPriceMapping(path):
         listOfStrings.append(partitioned[0])
         stringToParse = partitioned[2]
     for string in listOfStrings:
+        print(string)
         if re.search('[a-zA-Z]', string) and not re.search('[0-9]', string):
             listOfItems.append(string.lower())
         if string.startswith('$') or string.startswith('-'):

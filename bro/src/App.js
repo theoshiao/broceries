@@ -53,7 +53,7 @@ class App extends React.Component {
     const formData = new FormData();
     formData.append("file", fileObj);
     axios.post('http://127.0.0.1:5000/uploadphoto', formData).then(function (response) {
-    console.log(response);
+      console.log(response.data);
   }).catch(function (error) {
     console.log(error);
   });
