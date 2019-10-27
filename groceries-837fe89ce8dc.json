@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "groceries-257105",
+  "private_key_id": "837fe89ce8dc9a7f78f5a36cb6c774bad80bd51f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwyLxWMXqo58WV\ndP/YvjJU/aKNWUuItbsDhxFpu+2rUWOF/TBT/d6CYBbjCJ8YT6q+wjeAHiwBO1UU\nRo2+dxKaseN5EMA08P+AlvAdcxPakL9j7+VZlGh3TfxWr2GwYQ1KZVyIMzFQCwcW\neQ+U+sDSS5g4IcAwzs23RPzPRGud77yqW3Rt+r/o93MxMcjiDfmc5IdCVEigpEBg\nhcJtKiKT7eL+B9rtq8x4ASBhBB3RSxckOL4IqHcyLVvoWgW1X2qMW2dYMyvdNCJc\nRDOLqV0QIoDdRe7ZFjC5aCEoSvSL1QV4QRSmhtjnyeU9GF8Ftz/UbIpsgQGAQuJ8\ns1ZGdxWNAgMBAAECggEAEvI1z7MBJ1BM9Ps+CYzmDgUaF7X7NLftRq/XZj01d90t\nd7MD1pc9nTwObTSDqx0BT+0L+ldsIJGq85UAJJUppu9A/BJB1yqrkgIbJ7zT4uJi\ncKPJhl6JDPLhrqn1zpZde0dTsbvIIYDyYy6ERKjUY3VQkgDOp9ccuvMnePsnNsdz\nQ+SEGMtSdOyVNDxvj42uyY+rQT6E9AzqGQQAXXo10Nroyhpum34qAzcxeSaOzkUe\nMDKhbtAAczbi9PeQVJ4a8abQeUHP/jAIpOgQnxcEx+ohVv6IXCg5UzxjdTFKbxmy\nqeSukRy1DwziGK7Rei21eWYeUaZVhdci6u7uah8ajQKBgQDnYn/IYZEiPbCBl2it\njjnQ1AdkbF2lWA1U5nVmOkHdUPGfQqGNN/8yhdTyy1IkoW5V188Fn8ffFdcTAxw+\nWuxdMkcMa6CZJpt4rjsiEpxlvMQ8ARnlyiwLqfqnWfzmAlaWF9Ya7cEcG6X0wTZY\n2rCCZ6rjPI0wP+NLH9r/4J28fwKBgQDDl0AQHJ3it56VuK62qG2kdOUTivkxs8z3\nlIWNMSxbdMu6gQzVcgv9/p5ClzZ21IaitPowr0qjADYItBDdGzVDnrVIE+n9tojc\n0Z6VdVJeQf9yH8m++Gq9oLh5GrWhwutWt1J0D8OnWbUSHfu59HsbfmNPpa47QsFE\n49exa1JX8wKBgAYdcEsXaQKCptuF6NpNW/HM6LUauA7amN+Zh5jACWWT8g7HcAWP\naUsohkw0W2NkcMoL/gikBGA874YtGt37ASwlXANUBNaHUqyJzj5ER6XYq0b6sHiG\nM0vLnjg2BJz/itJEpv/nMKdRg71ILeuDPA72Nmny+7g+t/8QRHVmtkR5AoGBAIke\nqyngdguwgPwj6lBhyeQGk2ZdApCGpcZYGDzA4YEIY59Pw6iL+L5LV7YFfohWPEEr\nMU8aRO/7QOZfHod0AKZ0SFDMrTlSU6bDSjMreeBc0nG2uWApleN1Hn7Aa9+I4CX+\nBU8akibrrBaUcJqQPBItTABVfc1L4mSiet+GBsdjAoGBAIrNXaffa9Xntuihc6WA\nXyTUqseAssdZO7MoNgPUvqYx2jiJUU0i6u9CAS8a3790QaOzRYiEGEBq7ZarazwY\nO3MQ7fjfqcaPII199aWNWIefmKVtD/6Fpn4NYBS71Jj/h/21hBtI+tQg1qgGyksS\nu11osGXQrYrdtKF+13yIVzen\n-----END PRIVATE KEY-----\n",
+  "client_email": "theoshiao@groceries-257105.iam.gserviceaccount.com",
+  "client_id": "104957936958622467734",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/theoshiao%40groceries-257105.iam.gserviceaccount.com"
+}
